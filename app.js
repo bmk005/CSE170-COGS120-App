@@ -34,7 +34,9 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/', index.setTask);
+app.get('/setSubTask', index.setSubTask)
+app.get('/currentTask', index.currentTask)
 // Example route
 // app.get('/users', user.list);
 
