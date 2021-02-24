@@ -1,0 +1,6 @@
+{
+    "ccc" : {
+        "completed": ["taskA", "taskB"],
+        "todo": ["taskC", "taskD"]
+    }
+}

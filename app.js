@@ -34,7 +34,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.setTask);
+app.get('/', index.welcome);
+app.get('/setTask', index.setTask);
 app.get('/setSubTask', index.setSubTask)
 app.get('/currentTask', index.currentTask)
 app.get('/login', index.login);
