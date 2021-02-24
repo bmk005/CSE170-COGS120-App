@@ -4,9 +4,19 @@ body, input, button {
   font-family: 'Roboto', sans-serif;
 }
 
+form{
+  margin:30px auto;
+}
 
+form > div{
+  margin:10px auto;
+}
 .noFill {
   fill: none;
+}
+
+.subTaskGroup h2{
+  margin: 30px auto;
 }
 
 /* .instruction {
@@ -14,7 +24,7 @@ body, input, button {
   margin-left: 33%;
 } */
 #task-center{
-  margin-top: 30%;
+  margin-top: 15%;
 }
 section{
   width: 100%;
@@ -75,9 +85,9 @@ section button {
   width: 50px;
   height: 50px;
 
-  position:absolute;
-  top:33%;
-  right:15px;
+  position:relative;
+  top:32%;
+  left: 15px;
   z-index:2;
 
   border-radius: 25px;
@@ -255,6 +265,7 @@ ul.todo#completed:after {
   color: #aaa;
 }
 
+
 .form-row {
   border:  1px solid #e2e2e2;
   margin:  10px;
@@ -279,24 +290,25 @@ ul.todo#completed:after {
   top: 0%;
   height: 7%;
   width: 15%;
-  margin-left: 0%;
+  padding: 3px;
+  margin-top:1%;
   text-align: center;
-  border-radius:10px;
-  background: rgb(112, 103, 103);
+  border-radius:8px;
+  border-color: white;
+  background: rgb(221, 209, 209);
 }
 
 #goButton {
   outline:none;
   top: 30%;
   height: 7%;
+  padding: 5px;
   margin-left: 45%;
   text-align: center;
   border-radius:10px;
-  background: rgb(116, 109, 109);
+  border-color:white;
+  background: rgb(221, 209, 209);
 }
 
-.buttonText {
-  color: black;
-}
 
 
