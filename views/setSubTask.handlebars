@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Subtask Page</title>
+	<link href="css/navbar.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body >
+	  <div class="container">
 	<div>
-		<button id="backButton">
-			<div class="buttonText">
-				Go Back
-			</div>
-		</button>
+		<button id="backButton">Back</button>
 	</div>
 	<div class="subTaskGroup">
-		<h1>Add Subtask for Task1 </h1>
-		<h3>Estimated Total Time: 140 Min </h3>
+		<h2>Add Subtask <br>for Task1 </h2>
+		<h4>Estimated Total Time: 140 Min </h3>
 		<form>
 			<div>
 				Estimated Time:
@@ -53,11 +54,22 @@
 		  </form>
 	</div>
 	<div>
-		<button id="goButton">
-			<div class="buttonText">
-				Start Subtask
-			</div>
-		</button>
+		<button id="goButton">Start Subtask</button>
 	</div>
+	</div>
+	<div>
+    <nav class="mobile-nav">
+      
+      <a href="#"><div class="nav-item">
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/3521175/home.svg' alt=''>
+        <p>Home</p>
+        </div></a>
+      
+        <a href="#"><div class="nav-item">
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/3521175/menu.svg' alt=''>
+        <p>Task</p>
+        </div></a>
+    </nav>
+  </div> 
   </body>
 </html>  

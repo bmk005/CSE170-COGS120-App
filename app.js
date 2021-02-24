@@ -37,6 +37,8 @@ if ('development' == app.get('env')) {
 app.get('/', index.setTask);
 app.get('/setSubTask', index.setSubTask)
 app.get('/currentTask', index.currentTask)
+app.get('/login', index.login);
+app.get('/report', index.report);
 // Example route
 // app.get('/users', user.list);
 

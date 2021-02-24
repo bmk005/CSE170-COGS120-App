@@ -1,53 +1,49 @@
 @charset "UTF-8";
 
-body {
-  background: #edf0f1;
-  padding: 80px 0 0 0;
-}
-
 body, input, button {
   font-family: 'Roboto', sans-serif;
 }
+
 
 .noFill {
   fill: none;
 }
 
-.instruction {
+/* .instruction {
   color: #0f0f0f;
   margin-left: 33%;
+} */
+#task-center{
+  margin-top: 30%;
 }
-
-header {
-  width: 60%;
-  height: 40%;
-
-  position: fixed;
+section{
+  width: 100%;
+  /* height: 40%; */
+  padding:20px;
   /* padding: 10%; */
-  top: 30%;
+  /* top: 30%;
   bottom: 30%;
-  left: 20%;
+  left: 20%; */
   z-index: 5;
 
-  background: #070707;
-  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  /* background: #070707; */
+  /* box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15); */
   /* border-bottom-right-radius: 10px; */
   /* border-bottom-left-radius: 10px; */
 }
 
-header input {
-  width: 60%;
-  height: 12% !important;
+section input {
+  width: 80%;
+  height: 10% !important;
   margin-top: 8%;
-  margin-left: 20%;
+  /* margin-left: 10%; */
   /* float: left; */
   color: rgb(12, 10, 10);
-
   font-size: 15px;
   font-weight: 400;
   text-indent: 15%;
-  padding: 0 60px 0 0;
-  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 60px 10px 0;
+  background: rgba(219, 165, 165, 0.2);
   border-radius: 25px 25px 25px 25px;
   border: 0px;
   box-shadow: none;
@@ -59,33 +55,33 @@ header input {
 
 
 
-header input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.75);
+section input::-webkit-input-placeholder {
+  color:black;
 }
 
-header input:-moz-input-placeholder {
-  color: rgba(255, 255, 255, 0.75);
+section input:-moz-input-placeholder {
+  color: black;
 }
 
-header input::-moz-input-placeholder {
-  color: rgba(255, 255, 255, 0.75);
+section input::-moz-input-placeholder {
+  color:black;
 }
 
-header input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.75);
+section input:-ms-input-placeholder {
+  color: black;
 }
 
-header button {
+section button {
   width: 50px;
   height: 50px;
 
   position:absolute;
-  top:30%;
+  top:33%;
   right:15px;
   z-index:2;
 
   border-radius: 25px;
-  background: #fff;
+  background: rgb(192, 154, 154);
   border: 0px;
   box-shadow: none;
   outline: none;
@@ -95,9 +91,9 @@ header button {
   -moz-appearance: none;
 }
 
-header button svg {
-  width: 16px;
-  height: 16px;
+section button svg {
+  width: 14px;
+  height: 14px;
 
   position: absolute;
   top: 50%;
@@ -106,15 +102,8 @@ header button svg {
   margin: -8px 0 0 -8px;
 }
 
-header button svg .fill {
+section button svg .fill {
   fill: #0b0c0c;
-}
-
-.container {
-  width: 100%;
-  float: left;
-  margin-top: 30%;
-  /* padding: 15px; */
 }
 
 ul.todo {
@@ -131,7 +120,7 @@ ul.todo li {
   color: #444;
   line-height: 22px;
 
-  background: #fff;
+  background: rgb(24, 23, 23);
   border-radius: 5px;
   position: relative;
   box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
@@ -172,7 +161,7 @@ ul.todo li .buttons button:last-of-type:before {
   content: '';
   width: 1px;
   height: 30px;
-  background: #edf0f1;
+  background: #060707;
 
   position: absolute;
   top: 10px;
@@ -279,8 +268,9 @@ ul.todo#completed:after {
 
 
 .subTaskGroup {
-  margin-top: 5%;
-  margin-left: 30%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
 }
 
 
@@ -291,25 +281,22 @@ ul.todo#completed:after {
   width: 15%;
   margin-left: 0%;
   text-align: center;
-  width: 5%;
   border-radius:10px;
-  background: rgb(20, 20, 20);
+  background: rgb(112, 103, 103);
 }
 
 #goButton {
   outline:none;
   top: 30%;
   height: 7%;
-  width: 15%;
   margin-left: 45%;
   text-align: center;
-  width: 5%;
   border-radius:10px;
-  background: rgb(10, 10, 10);
+  background: rgb(116, 109, 109);
 }
 
 .buttonText {
-  color: #d8e5e0;
+  color: black;
 }
 
 

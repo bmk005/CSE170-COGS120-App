@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login Page</title>
+
+        <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/curTaskStyle.css">
     </head>
 
     <body>
-        <h1>Task: Review Midterm</h1>
-        <h1>SubTask: Review CSE 120 </h1>
+        <div class="contianer" id="center">
+        <h2><u>Task: Review Midterm</u></h1>
+        <h3 style="padding-top: 10%;">SubTask: Review CSE 120 </h1>
         <div id="clockdiv">
         <div>
             <span class="hours"></span>
@@ -22,7 +28,8 @@
         </div>
         </div>
 
-        <button>Start SubTask!</button>
+        <button>Start</button>
+        <button>Finish</button>
 
         <script>
             window.onload = function() {
@@ -72,6 +79,6 @@
         </script>
     
 
-
+     </div>
     </body>
 </html>

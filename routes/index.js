@@ -14,3 +14,11 @@ exports.setSubTask = function(req, res){
 exports.currentTask = function(req, res){
   res.render('currentTask');
 };
+
+exports.login = function(req, res){
+  res.render('login');
+};
+
+exports.report = function(req, res){
+  res.render('report');
+};

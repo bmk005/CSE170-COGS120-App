@@ -1,0 +1,22 @@
+#center{
+    text-align: center;
+    margin-top: 15%;
+}
+
+button {
+	background: none;
+	margin-left: 30%;
+	margin-right:30%;
+	margin-top: 10%;
+    padding:8px;
+	height: 15%;
+	width: 40%;
+	border: 2px solid rgb(14, 11, 11);
+	border-radius: 5px;
+	color: rgb(7, 6, 6);
+	display: block;
+	font-size: 2 em;
+	font-weight: bold;
+	position: relative;
+	text-transform: uppercase;
+  }

@@ -5,6 +5,10 @@ body{
   font-weight: 100;
 }
 
+#center{
+	margin-top: 20%;
+}
+
 h1{
   color: rgb(7, 7, 7);
   font-weight: 100;
@@ -13,6 +17,7 @@ h1{
 }
 
 #clockdiv{
+	padding-top:10%;
 	font-family: sans-serif;
 	color: #fff;
 	display: inline-block;
@@ -42,15 +47,16 @@ h1{
 
 button {
 	background: none;
-	margin-left: 45%;
-	margin-top: 5%;
-	height: 8%;
-	width: 10%;
-	border: 3px solid rgb(14, 11, 11);
+	margin-left: 35%;
+	margin-right:35%;
+	margin-top: 10%;
+	height: 15%;
+	width: 30%;
+	border: 2px solid rgb(14, 11, 11);
 	border-radius: 5px;
 	color: rgb(7, 6, 6);
 	display: block;
-	font-size: 0.6em;
+	font-size: 1 em;
 	font-weight: bold;
 	position: relative;
 	text-transform: uppercase;
