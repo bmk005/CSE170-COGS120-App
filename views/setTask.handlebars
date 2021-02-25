@@ -22,22 +22,22 @@
 
         <form action="/storeTask">
             <input class="taskInputElement" type="text" placeholder="Enter an Task.." name="taskName">
+			<button type="submit">Add</button>
             <input class="taskTimeElement" type="text" placeholder="Estimate Time.." name="taskTime">
 			<input class="taskTimeElement" type="hidden" value={{userName}} name="userName">
-            <br>
-            <button type="submit">Add</button>
+           
         </form>
 			<div >
 				
-				<h4>todo task</h4>
+				<h4><u>Todo Task</u></h4>
 				
 				{{#each task_todo}}
 				<a href="/todoTask/{{uname}}/{{name}}">
 					<ul> {{name}} </ul> 
 				</a>
 				{{/each}}
-				
-				<h4>completed task</h4>
+				<br>
+				<h4><u>Completed Task</u></h4>
 				{{#each task_completed}}
 				<ul > {{name}} </ul> 
 				{{/each}}

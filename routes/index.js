@@ -77,6 +77,10 @@ exports.login = function(req, res){
   res.render('login');
 };
 
+exports.todoSubTask = function(req, res){
+  res.render('todoSubTask');
+}
+
 exports.report = function(req, res){
   res.render('report');
 };
