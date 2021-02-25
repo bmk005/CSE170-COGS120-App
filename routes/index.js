@@ -12,6 +12,11 @@ exports.setTask = function(req, res){
   let password = req.query.pwd
   //@todo add password check; hide password in url
   let userDataDict = dataDict["userTable"]
+  if (userDataDict[userName] === undefined) {
+    userDataDict[userName] = {}
+    userDataDict[userName]["task_completed"] = []
+    userDataDict[userName]["task_todo"] = []
+  }
   let curUserData = userDataDict[userName]
   curUserData["userName"] = userName
   res.render('setTask', curUserData);
