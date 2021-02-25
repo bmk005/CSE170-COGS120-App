@@ -1,6 +1,27 @@
-{
-    "ccc" : {
-        "completed": ["taskA", "taskB"],
-        "todo": ["taskC", "taskD"]
+ {
+    "userTable" : {
+        "123" : {
+            "password" : "default",
+            "task_completed" : [
+                {"name" : "taskA"},
+                {"name" : "taskB"}
+            ],
+            "task_todo" : [
+                {"name" : "taskC", "uname": "123"},
+                {"name" : "taskD", "uname": "123"}
+            ]
+        }
+    },
+    "taskTable" : {
+        "123_taskC" : {
+            "time" : "140",
+            "subTask" : [
+                {"subTaskName" : "SubTask1", "time" : "40"},
+                {"subTaskName" : "SubTask2", "time": "50"}
+            ]
+        },
+        "123_taskD" : {
+            "time" : "120"
+        }
     }
 }
