@@ -10,8 +10,6 @@
     </head>
 
     <body>
-        <button id="backButton">Back</button>
-
         <div class="container" id="center">
         <h2><u>Task: {{taskName}} </u></h2>
         <h3>SubTask: {{subTaskName}} </h3>
@@ -31,34 +29,7 @@
         </div>
 
         <button onclick="startCountDown()">Start</button>
-        <button onclick="window.location.href='/todoTask/:uname/:name'" type="submit">Finish</button>
-
-
-
-
-
-
-
-
-
-
-
-
-        <div>
-            <nav class="mobile-nav">
-            
-            <a href="/"><div class="nav-item">
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/3521175/home.svg' alt=''>
-                <p>Home</p>
-                </div></a>
-            
-                <a href="/setTask/{{userName}}"><div class="nav-item">
-                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/3521175/menu.svg' alt=''>
-                <p>Task</p>
-                </div></a>
-            </nav>
-    </div>
-
+        <button onclick="window.location.href='/todoTask/{{userName}}/{{taskName}}'" type="submit">Finish</button>
 
 
 

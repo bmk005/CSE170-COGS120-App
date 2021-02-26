@@ -96,6 +96,7 @@ exports.storeSubTask = function(req, res) {
   let jsonString = JSON.stringify(dataDict)
   fs.writeFileSync("data.json", jsonString)
   taskDict["userName"] = userName
+  taskDict["taskName"] = taskName
   res.render("todoTask", taskDict)
 }
 
