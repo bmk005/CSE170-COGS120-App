@@ -12,6 +12,20 @@ form{
 form > div{
   margin:10px auto;
 }
+.add_subtask{
+  margin:10px;
+}
+
+.add_subtask button{
+  outline:none;
+  height: 7%;
+  padding: 5px;
+  text-align: center;
+  border-radius:10px;
+  border-color:white;
+  background: rgba(219, 165, 165, 0.2);
+}
+
 .noFill {
   fill: none;
 }

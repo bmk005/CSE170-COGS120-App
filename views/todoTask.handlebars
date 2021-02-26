@@ -17,7 +17,7 @@
 		<h4><u>Estimated Total Time:</u> {{time}} Min </h3>
 		<h4>List of SubTask</h4>
 		{{#each subTask}}
-		<form action="/todoSubTask/{{userName}}/{{subTaskName}}"> 
+		<form action="/todoSubTask/{{userName}}/{{subTaskName}}" class="add_subtask"> 
 			<input  type="hidden" value={{subTaskTime}} name="subTaskTime">
 			<input  type="hidden" value={{subTaskName}} name="subTaskName">
 			<input  type="hidden" value={{taskName}} name="taskName">
@@ -27,13 +27,14 @@
 		<br>
 		<h3>Add SubTask</h3>
 		<form action="/storeSubTask">
-			<div>
-				Estimated Time:
-				<input type="number" id="textInput" name="subTaskTime">
-			</div>
+			
 			<div>
 				Subtask Name:
 				<input type="text" id="textInput" name="subTaskName">
+			</div>
+			<div>
+				Estimated Time:
+				<input type="number" id="textInput" name="subTaskTime">
 			</div>
 			<input class="taskTimeElement" type="hidden" value={{userName}} name="userName">
 			<input class="taskTimeElement" type="hidden" value={{taskName}} name="taskName">
