@@ -1,12 +1,12 @@
-body{
+.container{
 	text-align: center;
 	background: #fafcfb;
-  font-family: sans-serif;
-  font-weight: 100;
+  	font-family: sans-serif;
+  	font-weight: 100;
 }
 
 #center{
-	margin-top: 20%;
+	margin-top: 50px;
 }
 
 h1{
@@ -60,4 +60,18 @@ button {
 	font-weight: bold;
 	position: relative;
 	text-transform: uppercase;
+  }
+
+  #backButton {
+	outline:none;
+	top: 0%;
+	height: 7%;
+	width: 15%;
+	padding: 3px;
+	margin-top:1%;
+	margin-left: 5%;
+	text-align: center;
+	border-radius:8px;
+	border-color: white;
+	background: rgb(221, 209, 209);
   }

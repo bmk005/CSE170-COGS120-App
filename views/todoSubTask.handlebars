@@ -10,9 +10,11 @@
     </head>
 
     <body>
-        <div class="contianer" id="center">
-        <h2><u>Task: {{taskName}} </u></h1>
-        <h3 style="padding-top: 10%;">SubTask: {{subTaskName}} </h1>
+        <button id="backButton">Back</button>
+
+        <div class="container" id="center">
+        <h2><u>Task: {{taskName}} </u></h2>
+        <h3>SubTask: {{subTaskName}} </h3>
         <div id="clockdiv">
         <div>
             <span class="hours"></span>
@@ -29,6 +31,7 @@
         </div>
 
         <button onclick="startCountDown()">Start</button>
+        <button onclick="window.location.href='/todoTask/:uname/:name'" type="submit">Finish</button>
 
 
 
@@ -77,6 +80,7 @@
                         'seconds': seconds
                     };
                 }
+
         
                 function initializeClock(id, endtime) {
                     var clock = document.getElementById(id);
@@ -100,6 +104,7 @@
             
                     updateClock();
                     var timeinterval = setInterval(updateClock, 1000);
+                    aler("Time is up! You can go back and start another subTask.");
                 }
                 subTaskTime = Number({{subTaskTime}})
                 var deadline = new Date(Date.parse(new Date()) + subTaskTime * 60 * 1000);
