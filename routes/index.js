@@ -49,7 +49,7 @@ exports.storeSubTask = function(req, res) {
   if (taskDict["subTask"] === undefined) {
     taskDict["subTask"] = []
   }
-  taskDict["subTask"].push({"subTaskName": subTaskName, "subTaskTime": subTaskTime})
+  taskDict["subTask"].push({"taskName": taskName, "subTaskName": subTaskName, "subTaskTime": subTaskTime, "userName":userName})
   dataDict["taskTable"][curKey] = taskDict
   res.render("todoTask", taskDict)
 }
@@ -63,23 +63,27 @@ exports.todoTask = function(req, res){
   userName = req.params.uname
   curKey = userName + "_" + taskName
   curTaskDict = dataDict["taskTable"][curKey]
-  curTaskDict["name"] = taskName
   curTaskDict["userName"] = userName
   curTaskDict["taskName"] = taskName
   res.render('todoTask', curTaskDict);
 };
 
 exports.todoSubTask = function(req, res){
-  res.render('currentTask');
+  let userName = req.params.uname
+  let subTaskName = req.query.subTaskName
+  let subTaskTime = req.query.subTaskTime
+  let taskName = req.query.taskName
+  curData = {}
+  curData["subTaskName"] = subTaskName
+  curData["subTaskTime"] = subTaskTime
+  curData["taskName"] = taskName
+  res.render('todoSubTask', curData);
 };
 
 exports.login = function(req, res){
   res.render('login');
 };
 
-exports.todoSubTask = function(req, res){
-  res.render('todoSubTask');
-}
 
 exports.report = function(req, res){
   res.render('report');

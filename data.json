@@ -1,4 +1,4 @@
- {
+{
     "userTable" : {
         "123" : {
             "password" : "default",
@@ -16,8 +16,8 @@
         "123_taskC" : {
             "time" : "140",
             "subTask" : [
-                {"subTaskName" : "SubTask1", "time" : "40"},
-                {"subTaskName" : "SubTask2", "time": "50"}
+                {"subTaskName" : "SubTask1", "subTaskTime" : "40"},
+                {"subTaskName" : "SubTask2", "subTaskTime": "50"}
             ]
         },
         "123_taskD" : {

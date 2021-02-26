@@ -13,13 +13,16 @@
 		<button id="backButton">Back</button>
 	</div>
 	<div class="subTaskGroup">
-		<h2>Add Subtask for {{name}} </h2>
+		<h2>Add Subtask for {{taskName}} </h2>
 		<h4><u>Estimated Total Time:</u> {{time}} Min </h3>
 		<h4>List of SubTask</h4>
 		{{#each subTask}}
-		<a href="/todoSubTask">
-			<ul> {{subTaskName}} </ul> 
-		</a>
+		<form action="/todoSubTask/{{userName}}/{{subTaskName}}"> 
+			<input  type="hidden" value={{subTaskTime}} name="subTaskTime">
+			<input  type="hidden" value={{subTaskName}} name="subTaskName">
+			<input  type="hidden" value={{taskName}} name="taskName">
+			<button type="submit" >{{subTaskName}}</button>
+		</form>
 		{{/each}}
 
 		<br>
