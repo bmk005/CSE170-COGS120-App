@@ -45,6 +45,9 @@ exports.storeSubTask = function(req, res) {
   let userName = req.query.userName
   let taskName = req.query.taskName
   curKey = userName + "_" + taskName
+  if (dataDict["taskTable"][curKey] === undefined) {
+    dataDict["taskTable"][curKey] = {}
+  }
   let taskDict = dataDict["taskTable"][curKey]
   if (taskDict["subTask"] === undefined) {
     taskDict["subTask"] = []
