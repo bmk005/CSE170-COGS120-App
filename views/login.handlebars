@@ -6,6 +6,8 @@
 	<title>Login Page</title>
     <link href="css/login.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
     
 
 </head>
@@ -19,7 +21,21 @@
             <input type="password" class="form-control" placeholder="Password" name="pwd" required>
             <br>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            
+            <!-- 
+            <p class="facebookLogin">
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
+            </p>
+            -->
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=762308041070211&autoLogAppEvents=1" nonce="L2HaWOIB"></script>
+    <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+            
+
         </form>
     </div>
+    		
 </body>
 </html>
